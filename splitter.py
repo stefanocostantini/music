@@ -1,10 +1,11 @@
+# must install ffmpeg for this to work (e.g. sudo apt-get install ffmpeg)
 import os
 from pydub import AudioSegment
 from pydub.utils import make_chunks
 
 chunk_length_ms = 2000 # pydub calculates in millisecs
-load_path = "/data/music/musicnet/test/"
-save_path = "/data/music/musicnet/test_chunks/"
+load_path = "/data/music/musicnet/data/"
+save_path = "/data/music/musicnet/data_chunks/"
 files = os.listdir(load_path)
 
 for i, file in enumerate(files):
