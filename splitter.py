@@ -17,5 +17,5 @@ for i, file in enumerate(files):
 
     for i, chunk in enumerate(chunks):
         chunk_name = save_path + "{0}-chunk{1}.wav".format(file_label, i)
-        print "exporting", chunk_name
+        print("exporting", chunk_name)
         chunk.export(chunk_name, format="wav")
